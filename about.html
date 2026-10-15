@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Aria Chen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<canvas id="stardust"></canvas>
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+<nav class="nav"><div class="nav-inner">
+<a href="index.html" class="brand"><span class="brand-mark">—</span> Aria Chen</a>
+<div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="about.html" class="active">About</a><a href="#contact" class="btn-small">Let's Talk</a></div>
+</div></nav>
+
+<div class="container about-grid">
+  <div class="reveal">
+    <div class="about-photo tilt"><img src="https://picsum.photos/seed/portrait-natural/560/680" alt="Aria Chen portrait" />
+      <div class="float-chip chip-1">Based in San Francisco</div>
+      <div class="float-chip chip-2">UTC-8 · works worldwide</div>
+    </div>
+    <div class="socials">
+      <a href="#" class="soc glass">Twitter</a><a href="#" class="soc glass">LinkedIn</a><a href="#" class="soc glass">GitHub</a><a href="#" class="soc glass">Dribbble</a>
+    </div>
+  </div>
+  <div class="reveal delay-1">
+    <div class="eyebrow">Hello, I'm Aria</div>
+    <h1>A calm approach to<br/><em>building software.</em></h1>
+    <p class="lede">I grew up between libraries and skate parks — equal parts curiosity and systems thinking. For 6+ years I've helped startups and scale-ups ship clear, reliable software.</p>
+    <p class="muted">Off-screen you'll find me developing film photography, trail-running in Marin, hosting a tiny newsletter called <b>“Soft Systems”</b> (8k readers), and mentoring first-gen CS students through CodePath.</p>
+    <div class="facts">
+      <div class="fact glass"><span>Name</span><b>Aria Chen</b></div>
+      <div class="fact glass"><span>Location</span><b>San Francisco, CA</b></div>
+      <div class="fact glass"><span>Email</span><b>hello@ariachen.dev</b></div>
+      <div class="fact glass"><span>Phone</span><b>+1 (415) 555-0132</b></div>
+      <div class="fact glass"><span>Languages</span><b>English · Mandarin · Español</b></div>
+      <div class="fact glass"><span>Hobbies</span><b>Film photo · Trail running · Ceramics</b></div>
+    </div>
+    <h3 style="margin-top:1.6rem">What I value</h3>
+    <div class="tags"><span>Clarity over cleverness</span><span>Accessibility always</span><span>Small teams, big ownership</span><span>Kind feedback</span></div>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <div class="contact-card glass reveal">
+    <div><h2>Let's make something <em>useful</em> together.</h2><p class="muted">Currently open to senior frontend / full-stack roles and select freelance. Replies within 24h.</p>
+    <div class="contact-lines"><a href="mailto:hello@ariachen.dev">hello@ariachen.dev</a><a href="tel:+14155550132">+1 (415) 555-0132</a><span>San Francisco · Remote-friendly</span></div></div>
+    <form class="contact-form" onsubmit="return sendDemo(event)">
+      <input required placeholder="Your name" /><input required type="email" placeholder="Email address" />
+      <textarea required placeholder="Tell me about your project..." rows="4"></textarea>
+      <button class="btn-primary" type="submit">Send Message</button>
+      <small id="formNote" class="muted"></small>
+    </form>
+  </div>
+</div>
+
+<footer><div class="container foot-inner"><div>Aria Chen © 2026</div><div class="foot-links"><a href="index.html">Home</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

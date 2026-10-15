@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aria Chen — Portfolio | Home</title>
+<meta name="description" content="Portfolio of Aria Chen — Product-minded Software Engineer." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<canvas id="stardust"></canvas>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">—</span> Aria Chen</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact" class="btn-small">Let's Talk</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero container">
+  <div class="hero-text reveal">
+    <div class="eyebrow"><span class="pulse"></span> Available for new opportunities · 2026</div>
+    <h1>Building calm, thoughtful<br/>software <em>with care.</em></h1>
+    <p class="type-line">I'm Aria Chen — <span id="typewriter"></span><span class="caret">|</span></p>
+    <p class="lede">Product-minded software engineer with 6+ years building web platforms, AI tools, and design systems used by 2M+ people. I focus on clarity, accessibility, and quiet attention to detail.</p>
+    <div class="cta-row">
+      <a href="projects.html" class="btn-primary magnetic">View Projects</a>
+      <a href="resume.html" class="btn-ghost magnetic">Explore Resume</a>
+    </div>
+    <div class="stats">
+      <div><strong data-count="6">0</strong><span>Years Experience</span></div>
+      <div><strong data-count="32">0</strong><span>Projects Shipped</span></div>
+      <div><strong data-count="14">0</strong><span>Awards & Honors</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal delay-1">
+    <div class="portrait-frame tilt" id="tiltCard">
+      <div class="portrait-glow"></div>
+      <img src="https://picsum.photos/seed/portrait-studio/520/640" alt="Portrait of Aria Chen" />
+      <div class="portrait-card glass">
+        <div class="pc-row"><span class="dot"></span> Currently — Senior Engineer @ Lumina Labs</div>
+        <div class="pc-big">“Simplicity is the hardest thing to build.”</div>
+      </div>
+      <div class="float-chip chip-1">2M+ users reached</div>
+      <div class="float-chip chip-2">Open source · 8.4k stars</div>
+    </div>
+  </div>
+</header>
+
+<section class="marquee"><div class="marquee-track">
+  <span>React · TypeScript · Python · AI/ML · Design Systems · Cloud Architecture · Motion Design · </span>
+  <span>React · TypeScript · Python · AI/ML · Design Systems · Cloud Architecture · Motion Design · </span>
+</div></section>
+
+<section class="container grid-3">
+  <div class="card glass reveal"><div class="card-icon">— 01</div><h3>Product Engineering</h3><p>End-to-end web apps from 0→1. Focused on performance (95+ Lighthouse), accessibility, and considered interactions.</p><a href="projects.html" class="link">See work →</a></div>
+  <div class="card glass reveal delay-1"><div class="card-icon">— 02</div><h3>AI Experiences</h3><p>LLM-powered tools, RAG pipelines, and interfaces that make complex systems feel clear and approachable.</p><a href="projects.html" class="link">See work →</a></div>
+  <div class="card glass reveal delay-2"><div class="card-icon">— 03</div><h3>Design Systems</h3><p>Author of “Aura UI” — 120+ component library adopted by 5 teams, cutting build time by 40%.</p><a href="resume.html" class="link">See resume →</a></div>
+</section>
+
+<section class="container split">
+  <div class="reveal"><h2 class="section-title">Featured <em>glimpse</em></h2>
+  <p class="muted">A preview of selected work. Full case studies, metrics, and galleries live on the Projects page.</p>
+  <div class="mini-list">
+    <a href="projects.html" class="mini-item glass"><img src="https://picsum.photos/seed/proj-nebula/120/120" alt=""/><div><strong>Nebula Dashboard</strong><span>Analytics · React · D3 — +38% retention</span></div><i>→</i></a>
+    <a href="projects.html" class="mini-item glass"><img src="https://picsum.photos/seed/proj-seren/120/120" alt=""/><div><strong>Seren AI Journal</strong><span>Wellness AI · Python · LLM — 120k users</span></div><i>→</i></a>
+    <a href="projects.html" class="mini-item glass"><img src="https://picsum.photos/seed/proj-aura/120/120" alt=""/><div><strong>Aura UI System</strong><span>Design System · 120 components</span></div><i>→</i></a>
+  </div></div>
+  <div class="quote-card glass reveal delay-1">
+    <div class="big-quote">“</div>
+    <p>Aria turns ambiguous ideas into shipped, beautiful products faster than anyone I've worked with. A rare mix of taste and rigor.</p>
+    <div class="quote-by"><img src="https://picsum.photos/seed/manager/80/80" alt=""/><div><strong>Sofia Marchetti</strong><span>VP Product, Lumina Labs</span></div></div>
+    <a href="about.html" class="btn-primary" style="margin-top:1.2rem">More About Me</a>
+  </div>
+</section>
+
+<footer><div class="container foot-inner">
+  <div>Aria Chen © 2026</div>
+  <div class="foot-links"><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="about.html">Contact</a></div>
+</div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

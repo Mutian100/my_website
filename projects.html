@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Aria Chen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<canvas id="stardust"></canvas>
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+<nav class="nav"><div class="nav-inner">
+<a href="index.html" class="brand"><span class="brand-mark">—</span> Aria Chen</a>
+<div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="resume.html">Resume</a><a href="projects.html" class="active">Projects</a><a href="about.html">About</a><a href="about.html#contact" class="btn-small">Let's Talk</a></div>
+</div></nav>
+
+<div class="container page-head reveal">
+  <div class="eyebrow">Selected Work 2019–2026</div>
+  <h1>Selected <em>work.</em></h1>
+  <p class="lede">Use the arrows or dots to browse. Each project includes context, stack, and outcome.</p>
+</div>
+
+<div class="container">
+<div class="carousel glass reveal" id="carousel">
+  <div class="slides" id="slides">
+    <div class="slide active">
+      <img src="https://picsum.photos/seed/proj-nebula/900/560" alt="Nebula Dashboard" />
+      <div class="slide-info"><div class="eyebrow">01 · Analytics Platform</div><h2>Nebula Dashboard</h2>
+      <p>Real-time analytics for 2M+ users. Custom D3 visualizations, edge-cached queries, and a calm, neutral interface that lifted retention 38%.</p>
+      <div class="tags"><span>React</span><span>D3.js</span><span>ClickHouse</span></div>
+      <div class="slide-meta"><span>★ 4.2k stars</span><span>↗ Live demo</span><span>⧉ Case study</span></div></div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos/seed/proj-seren/900/560" alt="Seren AI Journal" />
+      <div class="slide-info"><div class="eyebrow">02 · Wellness AI</div><h2>Seren AI Journal</h2>
+      <p>LLM journaling companion with mood sensing and gentle reflections. 120k downloads, 4.9★ rating, featured on App Store.</p>
+      <div class="tags"><span>Python</span><span>LLM / RAG</span><span>SwiftUI</span></div>
+      <div class="slide-meta"><span>★ 120k users</span><span>↗ Live demo</span><span>⧉ Case study</span></div></div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos/seed/proj-aura/900/560" alt="Aura UI" />
+      <div class="slide-info"><div class="eyebrow">03 · Design System</div><h2>Aura UI System</h2>
+      <p>120+ accessible components, tokens, and motion presets. Adopted by 5 teams, cut build time 40%. 8.4k GitHub stars.</p>
+      <div class="tags"><span>TypeScript</span><span>Storybook</span><span>Figma</span></div>
+      <div class="slide-meta"><span>★ 8.4k stars</span><span>↗ Live demo</span><span>⧉ Case study</span></div></div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos/seed/proj-tide/900/560" alt="Tidepool" />
+      <div class="slide-info"><div class="eyebrow">04 · E-commerce</div><h2>Tidepool Market</h2>
+      <p>Headless marketplace for indie makers. One-page checkout lifted conversion 3.2×. $2.4M GMV in year one.</p>
+      <div class="tags"><span>Next.js</span><span>Stripe</span><span>Postgres</span></div>
+      <div class="slide-meta"><span>★ $2.4M GMV</span><span>↗ Live demo</span><span>⧉ Case study</span></div></div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos/seed/proj-lumen/900/560" alt="Lumen Path" />
+      <div class="slide-info"><div class="eyebrow">05 · Accessibility</div><h2>Lumen Path</h2>
+      <p>AR wayfinding for low-vision users. HackMIT Grand Prize, piloted in 3 museums with 96% task success.</p>
+      <div class="tags"><span>React Native</span><span>ARKit</span><span>ML Kit</span></div>
+      <div class="slide-meta"><span>★ HackMIT Winner</span><span>↗ Live demo</span><span>⧉ Case study</span></div></div>
+    </div>
+  </div>
+  <button class="car-btn prev" id="prevBtn">←</button>
+  <button class="car-btn next" id="nextBtn">→</button>
+  <div class="dots" id="dots"></div>
+</div>
+
+<div class="grid-3" style="margin-top:2rem">
+  <div class="card glass reveal"><h3>Nebula Dashboard</h3><p class="muted">+38% retention · 1.1s p95 · 2M users</p><div class="tags"><span>React</span><span>D3</span></div></div>
+  <div class="card glass reveal delay-1"><h3>Seren AI Journal</h3><p class="muted">120k users · 4.9★ · App Store feature</p><div class="tags"><span>Python</span><span>LLM</span></div></div>
+  <div class="card glass reveal delay-2"><h3>Aura UI System</h3><p class="muted">120 components · 5 teams · 8.4k stars</p><div class="tags"><span>TS</span><span>Storybook</span></div></div>
+  <div class="card glass reveal"><h3>Tidepool Market</h3><p class="muted">3.2× conversion · $2.4M GMV</p><div class="tags"><span>Next.js</span><span>Stripe</span></div></div>
+  <div class="card glass reveal delay-1"><h3>Lumen Path</h3><p class="muted">HackMIT winner · 96% success · 3 museums</p><div class="tags"><span>RN</span><span>ARKit</span></div></div>
+  <div class="card glass reveal delay-2"><h3>Echo Notes</h3><p class="muted">Side project · 12k users · offline-first PWA</p><div class="tags"><span>PWA</span><span>CRDT</span></div></div>
+</div>
+</div>
+
+<footer><div class="container foot-inner"><div>Aria Chen © 2026</div><div class="foot-links"><a href="index.html">Home</a><a href="resume.html">Resume</a><a href="about.html">Contact</a></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resume — Aria Chen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<canvas id="stardust"></canvas>
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+<nav class="nav"><div class="nav-inner">
+<a href="index.html" class="brand"><span class="brand-mark">—</span> Aria Chen</a>
+<div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="resume.html" class="active">Resume</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="about.html#contact" class="btn-small">Let's Talk</a></div>
+</div></nav>
+
+<div class="container page-head reveal">
+  <div class="eyebrow">Curriculum Vitae — click any role to expand</div>
+  <h1>Experience, <em>measured.</em></h1>
+  <p class="lede">Six years across startups and scale-ups. Every role below expands to reveal scope, metrics, and stack.</p>
+  <div class="resume-actions">
+    <button class="btn-primary" onclick="window.print()">⤓ Download PDF</button>
+    <button class="btn-ghost" id="expandAll">Expand all</button>
+  </div>
+</div>
+
+<div class="container resume-grid">
+<div class="timeline">
+  <div class="job glass reveal open">
+    <button class="job-head">
+      <div class="job-logo">L</div>
+      <div><strong>Senior Software Engineer — Lumina Labs</strong><span>Jan 2023 → Present · San Francisco / Remote</span></div>
+      <div class="job-toggle">+</div>
+    </button>
+    <div class="job-body">
+      <p>Lead for analytics platform serving <b>2M+ monthly users</b>. Own roadmap with PM/design, mentor 4 engineers.</p>
+      <ul class="metrics">
+        <li><b>+38%</b> retention after dashboard redesign</li>
+        <li><b>-52%</b> p95 latency (2.4s → 1.1s) via edge caching</li>
+        <li><b>$1.2M</b> ARR influenced by new reporting tier</li>
+      </ul>
+      <div class="tags"><span>React</span><span>TypeScript</span><span>Node</span><span>ClickHouse</span><span>AWS</span></div>
+    </div>
+  </div>
+  <div class="job glass reveal">
+    <button class="job-head">
+      <div class="job-logo">N</div>
+      <div><strong>Frontend Engineer — Northwind Health</strong><span>Jun 2021 → Dec 2022 · New York</span></div>
+      <div class="job-toggle">+</div>
+    </button>
+    <div class="job-body">
+      <p>Built patient portal and clinician tools under HIPAA compliance. Shipped accessible design system from scratch.</p>
+      <ul class="metrics">
+        <li><b>480k</b> patients onboarded in first year</li>
+        <li><b>99.98%</b> uptime across 14 months</li>
+        <li><b>-40%</b> build time with new component library</li>
+      </ul>
+      <div class="tags"><span>Next.js</span><span>GraphQL</span><span>Tailwind</span><span>Cypress</span></div>
+    </div>
+  </div>
+  <div class="job glass reveal">
+    <button class="job-head">
+      <div class="job-logo">S</div>
+      <div><strong>Software Engineer — Sproutly (Startup)</strong><span>Aug 2019 → May 2021 · Austin</span></div>
+      <div class="job-toggle">+</div>
+    </button>
+    <div class="job-body">
+      <p>Founding engineer (team of 5). Built marketplace MVP, payments, and seller dashboard. Seed → Series A.</p>
+      <ul class="metrics">
+        <li><b>0 → 85k</b> users in 14 months</li>
+        <li><b>3.2×</b> conversion lift after checkout rewrite</li>
+        <li><b>$4M</b> Series A raised on MVP traction</li>
+      </ul>
+      <div class="tags"><span>Vue</span><span>Python</span><span>Stripe</span><span>Postgres</span></div>
+    </div>
+  </div>
+  <div class="job glass reveal">
+    <button class="job-head">
+      <div class="job-logo">F</div>
+      <div><strong>Web Development Intern — Fabrica Studio</strong><span>Jun 2018 → Aug 2019 · Part-time</span></div>
+      <div class="job-toggle">+</div>
+    </button>
+    <div class="job-body">
+      <p>Portfolio & e-commerce sites for 12+ agency clients. Learned the craft of polish and client communication.</p>
+      <ul class="metrics"><li><b>12+</b> client sites shipped</li><li><b>98</b> avg Lighthouse score</li></ul>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span></div>
+    </div>
+  </div>
+</div>
+
+<aside class="side">
+  <div class="card glass reveal"><h3>Skills</h3>
+    <div class="skill"><div class="skill-top"><span>TypeScript / React</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div></div>
+    <div class="skill"><div class="skill-top"><span>Python / AI & LLMs</span><span>88%</span></div><div class="bar"><i style="width:88%"></i></div></div>
+    <div class="skill"><div class="skill-top"><span>Cloud & DevOps (AWS)</span><span>82%</span></div><div class="bar"><i style="width:82%"></i></div></div>
+    <div class="skill"><div class="skill-top"><span>Motion & Interaction</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+    <div class="tags" style="margin-top:.8rem"><span>Figma</span><span>Docker</span><span>Postgres</span><span>Redis</span><span>LangChain</span></div>
+  </div>
+  <div class="card glass reveal delay-1"><h3>Awards</h3>
+    <ul class="awards">
+      <li><b>Awwwards SOTD ×3</b><span>Nebula, Seren, Aura — 2023–2025</span></li>
+      <li><b>Google Solution Challenge Finalist</b><span>Top 10 globally, 2022 — 8k teams</span></li>
+      <li><b>HackMIT Grand Prize</b><span>2021 — accessible wayfinding app</span></li>
+      <li><b>Dean's List & Magna Cum Laude</b><span>B.S. Computer Science, UT Austin</span></li>
+    </ul>
+  </div>
+  <div class="card glass reveal delay-2"><h3>Education</h3><p><b>UT Austin — B.S. Computer Science</b><br/><span class="muted">2015–2019 · GPA 3.8 · TA for Web Dev</span></p></div>
+</aside>
+</div>
+
+<footer><div class="container foot-inner"><div>Aria Chen © 2026</div><div class="foot-links"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">Contact</a></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

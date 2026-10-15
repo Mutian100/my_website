@@ -1,0 +1,15 @@
+# Secrets - never upload these
+.env
+.env.*
+*.pem
+*.key
+
+# System / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dependencies / build
+node_modules/
+dist/
